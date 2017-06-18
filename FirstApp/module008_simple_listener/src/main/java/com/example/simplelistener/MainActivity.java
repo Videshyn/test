@@ -32,13 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickStart(View v){
         String str = String.valueOf(edit.getText());
-        Pattern p = Pattern.compile("ху[й,я,ю,и,е]");
+        Pattern p = Pattern.compile("(ху[й,я,ю,и,е,ё]|п[и,е,ё]зд|^[ё,е]б|пид[^ж]|чмыр|залуп)");
         StringBuilder res = replace(p, str);
-        p = Pattern.compile("пизд");
-        res = replace(p, res.toString());
-        p = Pattern.compile("^еб");
-        res = replace(p, res.toString());
-        p = Pattern.compile("пид[^ж]");
         res = replace(p, res.toString());
         text.setText(res);
     }
