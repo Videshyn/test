@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UseInfoFromLessons1_15</string>
+    <string name="add">add</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="copy">copy</string>
+    <string name="paste">paste</string>
+    <string name="exit">exit</string>
+    <string name="default_text">default</string>
+    <string name="btnText">Cancel</string>
+</resources>

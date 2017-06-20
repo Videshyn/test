@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_menu"
+        android:title="@string/add">
+
+    </item>
+
+    <item
+        android:id="@+id/edit_menu"
+        android:title="@string/edit">
+
+    </item>
+
+    <item
+        android:id="@+id/delete_menu"
+        android:title="@string/delete">
+
+    </item>
+    <item
+        android:title="@string/copy"
+        android:id="@+id/copy_menu">
+
+    </item>
+    <item
+        android:id="@+id/paste_menu"
+        android:title="@string/paste">
+
+    </item>
+    <item
+        android:id="@+id/exit_menu"
+        android:title="@string/exit">
+
+    </item>
+
+</menu>
