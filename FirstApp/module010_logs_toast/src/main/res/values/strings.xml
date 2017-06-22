@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Logs&amp;Toast</string>
+    <string name="btn1">Ok</string>
+    <string name="btn2">Cancel</string>
+    <string name="text">default text</string>
+</resources>

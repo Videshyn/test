@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     EditText edit;
     TextView text;
     final String s = "***";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickStart(View v){
         String str = String.valueOf(edit.getText());
-        Pattern p = Pattern.compile("(ху[й,я,ю,и,е,ё]|п[и,е,ё]зд|^[ё,е]б|пид[^ж]|чмыр|залуп)");
+        Pattern p = Pattern.compile("(?i)(х[у,е][р,й,я,ю,и,е,ё]|п[и,е,ё]зд|^[ё,е]б|пид[^ж]|чмыр|залуп|бляд|[вы,у,по]" +
+                "[ё,е]б|за[ё,е]б|конч)");
         StringBuilder res = replace(p, str);
-        res = replace(p, res.toString());
+        //res = replace(p, res.toString());
         text.setText(res);
     }
 

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WorkWithRes</string>
+    <string name = "text1">Top text</string>
+    <string name = "text2">Bottom text</string>
+    <string name = "btn1">Button 1 text</string>
+    <string name = "btn2">Button 2 text</string>
+    <color name = "llTopColor">#336699</color>
+    <color name="llBottomColor">#18c669</color>
+</resources>

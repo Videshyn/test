@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">UseMenuInflater</string>
+    <string name="add">add</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="copy">copy</string>
+    <string name="paste">paste</string>
+    <string name="exit">exit</string>
+    <string name="text_view">default_text</string>
+    <string name="check_box">full menu</string>
+
+
+
+
+</resources>

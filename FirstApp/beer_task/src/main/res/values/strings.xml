@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Beer</string>
+    <string name="find_beer">Find beer</string>
+    <string name="settings">Settings</string>
+    <string name="brands"></string>
+    <string-array name="spinner_array">
+        <item>light</item>
+        <item>brown</item>
+        <item>dark</item>
+        <item>amber</item>
+    </string-array>
+</resources>

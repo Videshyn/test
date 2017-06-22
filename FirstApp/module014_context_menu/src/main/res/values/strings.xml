@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContextMenu</string>
+    <string name="color">text color</string>
+    <string name="size">text size</string>
+</resources>

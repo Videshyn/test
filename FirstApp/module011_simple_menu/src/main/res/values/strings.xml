@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SimpleMenu</string>
+    <string name="text_view">default text</string>
+    <string name="menu">menu</string>
+</resources>

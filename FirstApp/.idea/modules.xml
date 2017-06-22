@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FirstApp.iml" filepath="$PROJECT_DIR$/FirstApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/beer_task/beer_task.iml" filepath="$PROJECT_DIR$/beer_task/beer_task.iml" />
       <module fileurl="file://$PROJECT_DIR$/module001/module001.iml" filepath="$PROJECT_DIR$/module001/module001.iml" />
       <module fileurl="file://$PROJECT_DIR$/module002_loyauts/module002_loyauts.iml" filepath="$PROJECT_DIR$/module002_loyauts/module002_loyauts.iml" />
       <module fileurl="file://$PROJECT_DIR$/module003_layout_properties/module003_layout_properties.iml" filepath="$PROJECT_DIR$/module003_layout_properties/module003_layout_properties.iml" />
@@ -12,6 +13,12 @@
       <module fileurl="file://$PROJECT_DIR$/module006_activity_listener/module006_activity_listener.iml" filepath="$PROJECT_DIR$/module006_activity_listener/module006_activity_listener.iml" />
       <module fileurl="file://$PROJECT_DIR$/module007_better_listener/module007_better_listener.iml" filepath="$PROJECT_DIR$/module007_better_listener/module007_better_listener.iml" />
       <module fileurl="file://$PROJECT_DIR$/module008_simple_listener/module008_simple_listener.iml" filepath="$PROJECT_DIR$/module008_simple_listener/module008_simple_listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module009_work_with_res/module009_work_with_res.iml" filepath="$PROJECT_DIR$/module009_work_with_res/module009_work_with_res.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module010_logs_toast/module010_logs_toast.iml" filepath="$PROJECT_DIR$/module010_logs_toast/module010_logs_toast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module011_simple_menu/module011_simple_menu.iml" filepath="$PROJECT_DIR$/module011_simple_menu/module011_simple_menu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module012_menu_injava/module012_menu_injava.iml" filepath="$PROJECT_DIR$/module012_menu_injava/module012_menu_injava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module013_menu_inflater_menuxml/module013_menu_inflater_menuxml.iml" filepath="$PROJECT_DIR$/module013_menu_inflater_menuxml/module013_menu_inflater_menuxml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module014_context_menu/module014_context_menu.iml" filepath="$PROJECT_DIR$/module014_context_menu/module014_context_menu.iml" />
     </modules>
   </component>
 </project>

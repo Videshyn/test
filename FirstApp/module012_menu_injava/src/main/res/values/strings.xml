@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <string name="check_text">Full menu</string>
+    <string name="add">add</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
+    <string name="copy">copy</string>
+    <string name="paste">paste</string>
+    <string name="exit">exit</string>
+</resources>

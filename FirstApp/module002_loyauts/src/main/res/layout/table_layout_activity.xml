@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <TableRow>
+           <Button
+               android:width="100dp"
+               android:height="100dp"
+               android:text="btn1"/>
+       </TableRow>
+        <TableRow>
+            <TextView
+                android:height="100dp"
+                android:width="100dp" />
+            <Button
+                android:width="100dp"
+                android:height="100dp"
+                android:text="btn2"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:height="100dp"
+                android:width="100dp"/>
+            <TextView
+                android:height="100dp"
+                android:width="100dp"/>
+            <Button
+                android:height="100dp"
+                android:width="100dp"
+                android:text="btn3"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
