@@ -9,21 +9,15 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/beer_task" />
-            <option value="$PROJECT_DIR$/module001" />
-            <option value="$PROJECT_DIR$/module002_loyauts" />
-            <option value="$PROJECT_DIR$/module003_layout_properties" />
-            <option value="$PROJECT_DIR$/module004_viewByld" />
-            <option value="$PROJECT_DIR$/module005_listener" />
-            <option value="$PROJECT_DIR$/module006_activity_listener" />
-            <option value="$PROJECT_DIR$/module007_better_listener" />
-            <option value="$PROJECT_DIR$/module008_simple_listener" />
-            <option value="$PROJECT_DIR$/module009_work_with_res" />
-            <option value="$PROJECT_DIR$/module010_logs_toast" />
-            <option value="$PROJECT_DIR$/module011_simple_menu" />
-            <option value="$PROJECT_DIR$/module012_menu_injava" />
-            <option value="$PROJECT_DIR$/module013_menu_inflater_menuxml" />
-            <option value="$PROJECT_DIR$/module014_context_menu" />
+            <option value="$PROJECT_DIR$/module016_control_elements_from_java" />
+            <option value="$PROJECT_DIR$/module017_use_java_file_for_control_by_views" />
+            <option value="$PROJECT_DIR$/module018_simple_calculator" />
+            <option value="$PROJECT_DIR$/module019_calculator" />
+            <option value="$PROJECT_DIR$/module019_part2" />
+            <option value="$PROJECT_DIR$/module020_geoquiz_book" />
+            <option value="$PROJECT_DIR$/module020_part3_intents" />
+            <option value="$PROJECT_DIR$/module020_simple_animation" />
+            <option value="$PROJECT_DIR$/stop_watch" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
