@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Filter</string>
+    <string name="btnText">ЦЕНЗУРА</string>
 </resources>
