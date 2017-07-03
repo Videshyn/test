@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="sqlhibernatetest.User" table="user">
+       
+        <!-- Тег id всегда описывается отдельно, name - имя поля в джава, column - имя колонки в БД, 
+        type - тип филда в джаве, native - означает что нумерация берется с БД -->
+        <id name="user_id" column="user_id" type="int">
+         <generator class="native"></generator>
+       </id>
+       <property name="first_name" column="first_name" type="string"></property>
+       <property name="last_name" column="last_name" type="string"></property>
+    </class>
+</hibernate-mapping>
