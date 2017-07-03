@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backActivityColor">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edText"
+        android:layout_gravity="center"
+        android:text="@string/def"
+        android:textColor="@color/textColor"
+        android:layout_marginTop="25pt"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25pt"
+        android:text="@string/send"
+        android:id="@+id/btn"
+        android:textColor="@color/textButton"/>
+
+
+</LinearLayout>
