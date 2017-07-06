@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ 
+   <class name="hibernatesqlconnection.Clients" table="clients">
+       <!-- Тег id всегда описывается отдельно, name - имя поля в джава, column - имя колонки в БД, 
+       type - тип филда в джаве, native - означает что нумерация берется с БД -->
+       <id name="clients_id" column="clients_id" type="int">
+       <generator class="native"></generator>
+       </id>
+       <property name="clients_name" column="clients_name" type="string"></property>
+       <property name="clients_phone" column="clients_phone" type="string"></property>
+       <property name="clients_mail" column="clients_mail" type="string"></property>
+    </class> 
+    
+</hibernate-mapping>
