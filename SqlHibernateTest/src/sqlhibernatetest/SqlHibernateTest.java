@@ -1,6 +1,8 @@
 package sqlhibernatetest;
 
+import java.util.List;
 import org.hibernate.HibernateException;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -13,7 +15,9 @@ public class SqlHibernateTest {
    
     public static void main(String[] args) {
        //testInsertEmployee("test fname", "testLname");
-       testUser();
+       //testUser();
+       //testSelectEmployee();
+       testSearchQueryForEmployee("test name");
        
        
     }
@@ -50,6 +54,32 @@ public class SqlHibernateTest {
             session.close();
         }
     }
+     
+     private static void testSelectEmployee(){
+         //анализируем hibernate.cfg, открывает сессию
+         Session session = HibernateUtil.getSessionFactory().openSession();
+         //обращение к классу обертке, универсальный запрос хибернейта(регистрочувствительный)
+         String hql = "from Employee";
+         //Query - должен преобразовываться в какую-то коллекцию
+         Query query = session.createQuery(hql); // запрос выполняется, получаем результат
+         List<Employee> listEmployee = query.list();//
+         for(Employee aEmployee : listEmployee){
+             System.out.println(aEmployee.getName());
+         }
+         
+     }
+     private static void testSearchQueryForEmployee(String emplName){
+         
+         Session session = HibernateUtil.getSessionFactory().openSession();
+         
+         String hql = "from Employee where  name = '" + emplName + "'";
+         
+         Query query = session.createQuery(hql); // запрос выполняется, получаем результат
+         List<Employee> listEmployee = query.list();//
+         for(Employee aEmployee : listEmployee){
+             System.out.println(aEmployee.getName());
+         }
+     }
      
      
      private static void testUser() throws HibernateException {
