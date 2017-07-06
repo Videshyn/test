@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="sqlitehibernatexmlconnection.Departments" table="departments">
+       <!-- Тег id всегда описывается отдельно, name - имя поля в джава, column - имя колонки в БД, 
+       type - тип филда в джаве, native - означает что нумерация берется с БД -->
+       <id name="departments_id" column="departments_id" type="int">
+       <generator class="native"></generator>
+       </id>
+       <property name="departments_name" column="departments_name" type="string"></property>
+       <property name="region_info" column="region_info" type="string"></property>
+    </class> 
+</hibernate-mapping>
