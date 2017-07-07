@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+     <!-- выключение оптимизации что бы видеть генерируемые данные-->
+    <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+    <!--Название класса драйвера -->
+    <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+    <!--Путь к БД -->
+    <property name="hibernate.connection.url">jdbc:sqlite:e:\MyData\test.db</property>
+    <property name="hibernate.connection.password"/>
+    <property name="hibernate.connection.username"/>
+    <!--Если положить свой диалект файл то есть возможность управлять генерацией запросов -->
+    <property name="hibernate.dialect">hibernatejpamappingsqlitetest.SQLiteDialect</property>
+    <!-- демострация в консоли отладки запросы -->
+    <property name="show_sql">true</property>
+    <mapping class="hibernatejpamappingsqlitetest.Employee"></mapping>
+    <mapping class="hibernatejpamappingsqlitetest.Employees"></mapping>
+  </session-factory>
+    
+</hibernate-configuration>
