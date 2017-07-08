@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="hibernatequerytestsqlitexml"> <!-- дает возможность не использовать полное имя классов -->
+ 
+        <class name="Category" table="CATEGORY">
+		<id name="id" column="CATEGORY_ID">
+			<generator class="native"/>
+		</id>
+		<property name="name" column="NAME" />
+<!-- Set указывает на тип коллекции которая используется, в данном примере set,
+                inverse="true" cascade="all" эти теги идут только у one-to-many-->
+		<set name="products" inverse="true" cascade="all">
+			<key column="CATEGORY_ID" not-null="true" />
+			<one-to-many class="Product"/>
+                       
+		</set>
+	</class>
+    
+</hibernate-mapping>
