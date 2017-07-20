@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MapApp</string>
+    <string name="lat">latitude</string>
+    <string name="latitude">Enter your latitude:</string>
+    <string name="longitude">Enter your longitude:</string>
+    <string name="btnOk">Ok</string>
+    <string name="reset">reset</string>
 </resources>
