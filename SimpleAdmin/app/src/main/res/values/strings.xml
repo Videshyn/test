@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">SimpleAdmin</string>
+    <string name="hint_email">email</string>
+    <string name="hint_password">password</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_out">sign out</string>
+    <string name="loading">Loading...</string>
+    <string name="choose">choose table for work:</string>
+    <string name="products">products</string>
+    <string name="clients">clients</string>
+    <string name="products_action">Choose action for PRODUCTS</string>
+    <string name="products_btn_see_all">see all</string>
+    <string name="products_btn_rewrite">rewrite</string>
+    <string name="products_btn_add">add</string>
+    <string name="clients_action">choose action for CLIENTS</string>
+    <string name="btn_clients_see_all">see all</string>
+    <string name="btn_clients_rewrite">rewrite</string>
+    <string name="btn_clients_add">add</string>
+    <string name="hint_products_name">product\'s name</string>
+    <string name="hint_products_price">product\'s price</string>
+    <string name="ok">ok</string>
+    <string name="hint_products_id">product\'s id</string>
+    <string name="hint_new_products_name">new product\'s name</string>
+    <string name="hint_new_products_price">new products price</string>
+    <string name="hint_clients_name">client\'s name</string>
+    <string name="hint_clients_phone">clients\'s phone</string>
+    <string name="hint_clients_id">clients id</string>
+    <string name="hint_new_clients_name">new clients name</string>
+    <string name="hint_new_clients_phone">new clients phone</string>
+</resources>

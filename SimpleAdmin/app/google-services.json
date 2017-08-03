@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "110464442751",
+    "firebase_url": "https://simpleadmin-76f7c.firebaseio.com",
+    "project_id": "simpleadmin-76f7c",
+    "storage_bucket": "simpleadmin-76f7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:110464442751:android:5c50e99d6d41777d",
+        "android_client_info": {
+          "package_name": "com.example.user.simpleadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "110464442751-t7dbaks25v86kl79o1tt3pak1dibbjj7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.simpleadmin",
+            "certificate_hash": "bc5438266916e5aec1b428a4d7a1d321add41af4"
+          }
+        },
+        {
+          "client_id": "110464442751-ngibah30m0pul493rktcir39rjv5ng3u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmx-OAxR0bD0hBep9cfQSPb33UD5UUm9E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "110464442751-ngibah30m0pul493rktcir39rjv5ng3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
