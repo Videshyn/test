@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyFinanceApp</string>
+    <string name="tv_choose_categories">Choose category</string>
+    <string name="your_balance">your balance</string>
+    <string name="your_expenses">your expenses</string>
+    <string name="edit_name">Name of expenses</string>
+    <string name="edit_cost">Cost</string>
+    <string name="Ok">ok</string>
+    <string name="your_remainder">your remainder</string>
+    <string name="date">Date</string>
+    <string name="prompt">Enter category:</string>
+    <string name="hint_balance">Enter balance:</string>
+    <string name="add">add</string>
+    <string name="update">update</string>
+</resources>
