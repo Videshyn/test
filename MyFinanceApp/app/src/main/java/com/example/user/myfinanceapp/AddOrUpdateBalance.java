@@ -22,7 +22,7 @@ public class AddOrUpdateBalance extends Activity implements View.OnClickListener
     private DBHelper dbHelper;
     private EditText etAddBalance;
     private SQLiteDatabase database;
-    private double defaultBalance = 0.0;
+    //private double defaultBalance = 0.0;
 
     // при вызове активити в БД заносится значение 0.0 в поле баланс таблицы БАЛАНС, при нажатии
     // кнопки add выполняется проверка пкстая таблица или нет, если нет вытягиваются все начения суммируются с
@@ -35,7 +35,7 @@ public class AddOrUpdateBalance extends Activity implements View.OnClickListener
 
         initUI();
         // add 0.0 if DB is empty
-        addDefaultBalance();
+        //addDefaultBalance();
 
         btnAdd.setOnClickListener(this);
         btnUpdate.setOnClickListener(this);
@@ -50,17 +50,17 @@ public class AddOrUpdateBalance extends Activity implements View.OnClickListener
 
     }
 
-    private void addDefaultBalance(){
-        database = dbHelper.getWritableDatabase();
-        Cursor cursor = database.query("BALANCE", null, null, null, null, null, null);
-        if (cursor.getCount() == 0){
-            ContentValues cv = new ContentValues();
-            cv.put("balance_count", defaultBalance);
-            database.insert("BALANCE", null, cv);
-        }
-        cursor.close();
-        dbHelper.close();
-    }
+//    private void addDefaultBalance(){
+//        database = dbHelper.getWritableDatabase();
+//        Cursor cursor = database.query("BALANCE", null, null, null, null, null, null);
+//        if (cursor.getCount() == 0){
+//            ContentValues cv = new ContentValues();
+//            cv.put("balance_count", defaultBalance);
+//            database.insert("BALANCE", null, cv);
+//        }
+//        cursor.close();
+//        dbHelper.close();
+//    }
 
     @Override
     public void onClick(View view) {
@@ -86,6 +86,7 @@ public class AddOrUpdateBalance extends Activity implements View.OnClickListener
                         database.update("BALANCE", cv, "id_balance = ?", new String[] {"1"});
                         intent = new Intent(this, MainActivity.class);
                         intent.putExtra("balanceAll", balanceAll);
+                        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                     }
                     break;
@@ -95,6 +96,7 @@ public class AddOrUpdateBalance extends Activity implements View.OnClickListener
                     database.update("BALANCE", cv, "id_balance = ?", new String[] {"1"});
                     intent = new Intent(this, MainActivity.class);
                     intent.putExtra("balanceAll", balanceAll);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     break;
             }

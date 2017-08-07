@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tvBalance, tvExpenses, tvRemainder;
     private Spinner categoriesSpinner;
 
+
     private List<String> defaultCategories;
 
     private static final String YOUR_BALANCE = "balance 0.0";
@@ -50,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initUI();
 
         fillSpinner();
+        addDefaultBalance();
         setBalance();
         setExpenses();
         setRemainder();
@@ -58,11 +60,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+
+    private void addDefaultBalance(){
+        database = dbHelper.getWritableDatabase();
+        Cursor cursor = database.query("BALANCE", null, null, null, null, null, null);
+        if (cursor.getCount() == 0){
+            ContentValues cv = new ContentValues();
+            cv.put("balance_count", defaultBalance);
+            database.insert("BALANCE", null, cv);
+        }
+        cursor.close();
+        dbHelper.close();
+    }
+
     @Override
     protected void onRestart() {
         setBalance();
         setExpenses();
         setRemainder();
+        fillSpinner();
         super.onRestart();
     }
 
@@ -71,6 +87,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setBalance();
         setExpenses();
         setRemainder();
+        fillSpinner();
         super.onResume();
     }
 
@@ -198,6 +215,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    private void delCategory() {
+        database = dbHelper.getWritableDatabase();
+        LayoutInflater li = LayoutInflater.from(context);
+        View dialogView = li.inflate(R.layout.category_dialog, null);
+        AlertDialog.Builder mDialogBuilder = new AlertDialog.Builder(context);
+        mDialogBuilder.setView(dialogView);
+        final EditText userInput = (EditText) dialogView.findViewById(R.id.input_text);
+        mDialogBuilder
+                .setCancelable(false)
+                .setPositiveButton("OK",
+                        new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog,int id) {
+                                String input = userInput.getText().toString();
+                                String sqlQuery = "DELETE FROM CATEGORIES WHERE category_name = ?;";
+                                database.delete("CATEGORIES", "category_name=?", new String[]{input});
+                                database.close();
+                                onRestart();
+                            }
+                        });
+        AlertDialog alertDialog = mDialogBuilder.create();
+
+        alertDialog.show();
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -218,10 +259,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 addCategory();
                 break;
             case 1:
-
+                delCategory();
                 break;
             case 2:
-
+                intent = new Intent(this, Statistics.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
                 break;
             case 3:
                 finish();
@@ -231,18 +274,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return super.onOptionsItemSelected(item);
     }
 
+
+
+
     @Override
     public void onClick(View view) {
         Intent intent;
         switch (view.getId()){
             case R.id.btnPlus:
                 intent = new Intent(this, AddOrUpdateBalance.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
             case R.id.btnMinus:
                 intent = new Intent(this, AddingExpenses.class);
                 String spinnerItem = categoriesSpinner.getSelectedItem().toString();
                 intent.putExtra("spinnerItem", spinnerItem);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
                 break;
         }

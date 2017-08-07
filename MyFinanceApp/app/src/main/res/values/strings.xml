@@ -12,4 +12,5 @@
     <string name="hint_balance">Enter balance:</string>
     <string name="add">add</string>
     <string name="update">update</string>
+    <string name="stat">statistics</string>
 </resources>

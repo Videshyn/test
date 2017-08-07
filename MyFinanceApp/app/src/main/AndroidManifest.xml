@@ -9,20 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddingExpenses">
+        <activity
+            android:name=".AddingExpenses"
+            android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".Picker">
+        <activity
+            android:name=".Picker"
+            android:screenOrientation="portrait">
 
         </activity>
-        <activity android:name=".AddOrUpdateBalance">
+        <activity
+            android:name=".AddOrUpdateBalance"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Statistics"
+            android:screenOrientation="portrait">
 
         </activity>
     </application>

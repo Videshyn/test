@@ -41,6 +41,7 @@ public class AddingExpenses extends Activity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AddingExpenses.this, Picker.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivityForResult(intent, INTENT_CONST);
             }
         });
@@ -58,6 +59,7 @@ public class AddingExpenses extends Activity {
                         database.insert("EXPENSES", null, cv);
                         Toast.makeText(AddingExpenses.this, "Adding!", Toast.LENGTH_SHORT).show();
                         Intent mainIntent = new Intent(AddingExpenses.this, MainActivity.class);
+                        mainIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(mainIntent);
                     } else {
                         Toast.makeText(AddingExpenses.this, "fill in all the fields", Toast.LENGTH_SHORT).show();

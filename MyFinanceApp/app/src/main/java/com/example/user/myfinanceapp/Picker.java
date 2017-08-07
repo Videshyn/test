@@ -41,6 +41,7 @@ public class Picker extends Activity {
                 String date = monthStr + ":" + dayStr + ":" + datePicker.getYear() ;
                 Intent intent = new Intent();
                 intent.putExtra("date", date);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 setResult(RESULT_OK, intent);
                 finish();
             }
